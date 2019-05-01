@@ -1,6 +1,6 @@
 # Door Unlock/Lock System
 
-![system image](https://github.com/danvolchek/door-unlocker/blob/master/images/system_image.jpg)
+![system image](https://github.com/danvolchek/door-unlocker/blob/master/images/system_image.jpg?id=1)
 
 - [Door Unlock/Lock System](#door-unlock-lock-system)
   * [Hardware Requirements](#hardware-requirements)
