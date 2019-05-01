@@ -38,12 +38,12 @@ This repo holds the hardware and software needed to create the door unlock/lock 
   - I ended up not using the magnet where the Arduino is because it was already firmly attached to the door and I didn't want to break the electronics.
 ### Overview
 The main components of the model are:
- - The door holes fit around the door knob and lock knob, aligning the assembly in the proper spot.
- - The magnet pockets hold magnets that keep the assembly firmly attached to the door.
- - The motor holder holds the servo in the right spot.
- - The Arduino pegs hold the Arduino in the right spot.
- - The battery holder holds the battery. Note that this may need to be shifted/angled in order to fit based on the size of your USB cable.
- - The gears that attach to the motor and door lock.
+ - The **door holes** fit around the door knob and lock knob, aligning the assembly in the proper spot.
+ - The **magnet pockets** hold magnets that keep the assembly firmly attached to the door.
+ - The **motor holder** holds the servo in the right spot.
+ - The **Arduino pegs** hold the Arduino in the right spot.
+ - The **battery holder** holds the battery. Note that this may need to be shifted/angled in order to fit based on the size of your USB cable.
+ - The **gears** that attach to the motor and door lock.
  
 The model was created using FreeCAD. I would honestly not recommend this software and encourage you to export it to another CAD tool if you want to make changes.
 
