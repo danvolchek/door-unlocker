@@ -26,7 +26,7 @@ This repo holds the hardware and software needed to create the door unlock/lock 
   - A [servo](https://www.adafruit.com/product/1404). Any will work, but you'll need to edit the 3D model.
   - Print out the 3D model.
   - Some wires to wire up the Arduino to the servo.
-  - Some hot glue to attach the servo horn to the servo gear.
+  - Some hot glue to attach the circular servo horn to the servo gear.
   - A [portable battery](https://www.amazon.com/Anker-PowerCore-Ultra-Compact-High-Speed-Technology/dp/B0194WDVHI). Note that this specific one ended up being slightly too large so I had to print the battery holder at a slight angle so the cable would fit.
 
 ## 3D Model
@@ -67,6 +67,8 @@ The app was made using Android Studio and is fairly standard.
   - SSH into your Yun and install the openssl utils using `opk update` and then `opkg install openssl-util`.
   - **You'll need to update the key and iv in arduino.ino. See the TODOs.**
   - Connect your Yun to your PC and upload the sketch.
+  - Wiring diagram:
+  [[wiring_diagram.png]]
 ### Overview
 This is the the code for the Arduino which:
   - Listens for lock/unlock commands and decrypts them
