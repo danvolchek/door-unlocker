@@ -1,5 +1,7 @@
 # Door Unlock/Lock System
 
+![system image](https://github.com/danvolchek/door-unlocker/blob/master/images/system_image.png)
+
 - [Door Unlock/Lock System](#door-unlock-lock-system)
   * [Hardware Requirements](#hardware-requirements)
   * [3D Model](#3d-model)
@@ -68,7 +70,7 @@ The app was made using Android Studio and is fairly standard.
   - **You'll need to update the key and iv in arduino.ino. See the TODOs.**
   - Connect your Yun to your PC and upload the sketch.
   - Wiring diagram:
-  ![wiring diagram](https://github.com/danvolchek/door-unlocker/blob/master/wiring_diagram.png)
+  ![wiring diagram](https://github.com/danvolchek/door-unlocker/blob/master/images/wiring_diagram.png)
     - In the diagram:
       - the servo ground should go to the ground of the Yun.
       - the servo Vin should go to the 5v out of the Yun.
