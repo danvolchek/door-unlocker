@@ -14,12 +14,12 @@
     + [Install instructions](#install-instructions-2)
     + [Overview](#overview-2)
 
-This repo holds the hardware and software needed to create the door unlock/lock system that I've created. The main components are as follows. See below for a detailed description of each.
+This repo holds the hardware and software needed to create the door unlock/lock system that I've created. See above for an image of what it looks like. See below for the main components and a detailed description of each.
 
 | Component    | Files           |  Description                                    |
 |--------------|-----------------|-------------------------------------------------|
-| 3D Model     | `Door.fcstd`    | The 3d model needed to print the door assembly. |
-| Android Code |  `DoorManager/` | The Android studio project for the Android app. |
+| 3D Model     | `Door.fcstd`    | The 3D model needed to print the door assembly. |
+| Android Code |  `DoorManager/` | The Android app.                                |
 | Arduino Code | `arduino/`      | The sketch for the Arduino.                     |
 
 ## Hardware Requirements
