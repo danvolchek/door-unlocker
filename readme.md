@@ -27,12 +27,15 @@ This repo holds the hardware and software needed to create the door unlock/lock 
   - Print out the 3D model.
   - Some wires to wire up the Arduino to the servo.
   - Some hot glue to attach the servo horn to the servo gear.
+  - A [portable battery](https://www.amazon.com/Anker-PowerCore-Ultra-Compact-High-Speed-Technology/dp/B0194WDVHI). Note that it ended up being slightly too large so I had to print the battery holder at a slight angle so the cable would fit.
 
 ## 3D Model
 ### Install instructions
   - Install [FreeCAD](https://www.freecadweb.org/). See the note at the end of the overview about FreeCAD, though.
-  - Once you've printed things out, you'll need to file down the motor holder slightly to get it to fit the servo.
-  - You'll also need to file the gear teeth down slightly so they mesh nicer.
+  - Once you've printed things out, you'll need to
+    - File down the motor holder slightly to get it to fit the servo.
+    - File the gear teeth down slightly so they mesh nicer.
+  - I ended up not using the magnet where the Arduino is because it was already firmly attached to the door and I didn't want to break the electronics.
 ### Overview
 The main components of the model are:
  - The door holes fit around the door knob and lock knob, aligning the assembly in the proper spot.
@@ -61,7 +64,6 @@ The app was made using Android Studio and is fairly standard.
 ### Install instructions
   - Follow [this guide](https://www.arduino.cc/en/Guide/ArduinoYunLin#toc18) (or possibly [this one](https://www.arduino.cc/en/Guide/ArduinoYun#toc16) depending on which Yun you bought) to get the Yun connected to your Wifi.
   - Follow [this guide](https://www.arduino.cc/en/Tutorial/YunSysupgrade) to upgrade your Yun to the latest version.
-  - Install the Android libraries for SDK version 28.
   - Install the openssl utils using `opk update` and then `opkg install openssl-util`.
   - **You'll need to update the key and iv in arduino.ino**.
   - Connect your Yun to your PC and upload the sketch.
