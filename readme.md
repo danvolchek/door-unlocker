@@ -27,7 +27,7 @@ This repo holds the hardware and software needed to create the door unlock/lock 
   - Print out the 3D model.
   - Some wires to wire up the Arduino to the servo.
   - Some hot glue to attach the servo horn to the servo gear.
-  - A [portable battery](https://www.amazon.com/Anker-PowerCore-Ultra-Compact-High-Speed-Technology/dp/B0194WDVHI). Note that it ended up being slightly too large so I had to print the battery holder at a slight angle so the cable would fit.
+  - A [portable battery](https://www.amazon.com/Anker-PowerCore-Ultra-Compact-High-Speed-Technology/dp/B0194WDVHI). Note that this specific one ended up being slightly too large so I had to print the battery holder at a slight angle so the cable would fit.
 
 ## 3D Model
 ### Install instructions
@@ -51,7 +51,7 @@ The model was created using FreeCAD. I would honestly not recommend this softwar
 ### Install instructions
   - Install [Android Studio](https://developer.android.com/studio).
   - Install the Android libraries for SDK version 28.
-  - **You'll need to update the key, iv, and ip of your Yun in MainActivity.java**.
+  - **You'll need to update the key, iv, and ip of your Yun in MainActivity.java. See the TODOs.**
   - Connect your phone (or an emulator) to your PC and install the app.
 ### Overview
 This holds the code for the Android app that communicates with the Arduino. It
@@ -64,8 +64,8 @@ The app was made using Android Studio and is fairly standard.
 ### Install instructions
   - Follow [this guide](https://www.arduino.cc/en/Guide/ArduinoYunLin#toc18) (or possibly [this one](https://www.arduino.cc/en/Guide/ArduinoYun#toc16) depending on which Yun you bought) to get the Yun connected to your Wifi.
   - Follow [this guide](https://www.arduino.cc/en/Tutorial/YunSysupgrade) to upgrade your Yun to the latest version.
-  - Install the openssl utils using `opk update` and then `opkg install openssl-util`.
-  - **You'll need to update the key and iv in arduino.ino**.
+  - SSH into your Yun and install the openssl utils using `opk update` and then `opkg install openssl-util`.
+  - **You'll need to update the key and iv in arduino.ino. See the TODOs.**
   - Connect your Yun to your PC and upload the sketch.
 ### Overview
 This is the the code for the Arduino which:
