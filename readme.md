@@ -32,7 +32,7 @@ This repo holds the hardware and software needed to create the door unlock/lock 
 ## 3D Model
 ### Install instructions
   - Install [FreeCAD](https://www.freecadweb.org/). See the note at the end of the overview about FreeCAD, though.
-  - Once you've printed things out, you'll need to
+  - Once you've printed things out (unless you improve the model) you'll need to:
     - File down the motor holder slightly to get it to fit the servo.
     - File the gear teeth down slightly so they mesh nicer.
   - I ended up not using the magnet where the Arduino is because it was already firmly attached to the door and I didn't want to break the electronics.
