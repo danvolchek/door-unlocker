@@ -25,7 +25,7 @@ This repo holds the hardware and software needed to create the door unlock/lock 
 ## Hardware Requirements
  - Some [magnets](https://www.amazon.com/DIYMAG-Powerful-Neodymium-Permanent-Scientific/dp/B06XD2X45M) (any work, but they need to be 3mm thickness, 32mm diameter).
   - An [Arduino Yun](https://store.arduino.cc/usa/arduino-yun). All the Arduino code is specific to it so you're best off getting this if you don't want to rewrite it.
-  - A [servo](https://www.adafruit.com/product/1404). Any will work, but you'll need to edit the 3D model.
+  - A [servo](https://www.adafruit.com/product/1404). If you want to use another, you'll need to edit the 3D model.
   - Print out the 3D model.
   - Some wires to wire up the Arduino to the servo.
   - Some hot glue to attach the circular servo horn to the servo gear.
@@ -78,8 +78,8 @@ The app was made using Android Studio and is fairly standard.
       - the servo feedback should go to analog pin 0 out of the Yun.
 ### Overview
 This is the the code for the Arduino which:
-  - Listens for lock/unlock commands and decrypts them
-  - Moves the servo when valid commands are received
-  - Hosts the current door state
+  - Listens for lock/unlock commands and decrypts them.
+  - Moves the servo when valid commands are received.
+  - Hosts the current door state.
 
 This was made using the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
