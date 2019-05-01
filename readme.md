@@ -17,8 +17,8 @@ This repo holds the hardware and software needed to create the door unlock/lock 
 | Component    | Files           |  Description                                    |
 |--------------|-----------------|-------------------------------------------------|
 | 3D Model     | `Door.fcstd`    | The 3d model needed to print the door assembly. |
-| Android Code |  `DoorManager/` | The android studio project for the android app. |
-| Arduino Code | `arduino/`      | The sketch for the arduino.                     |
+| Android Code |  `DoorManager/` | The Android studio project for the Android app. |
+| Arduino Code | `arduino/`      | The sketch for the Arduino.                     |
 
 ## Hardware Requirements
  - Some [magnets](https://www.amazon.com/DIYMAG-Powerful-Neodymium-Permanent-Scientific/dp/B06XD2X45M) (any work, but they need to be 3mm thickness, 32mm diameter).
@@ -38,7 +38,7 @@ The main components of the model are:
  - The door holes fit around the door knob and lock knob, aligning the assembly in the proper spot.
  - The magnet pockets hold magnets that keep the assembly firmly attached to the door.
  - The motor holder holds the servo in the right spot.
- - The arduino pegs hold the arduino in the right spot.
+ - The Arduino pegs hold the Arduino in the right spot.
  - The battery holder holds the battery. Note that this may need to be shifted/angled in order to fit based on the size of your USB cable.
  - The gears that attach to the motor and door lock.
  
@@ -51,9 +51,9 @@ The model was created using FreeCAD. I would honestly not recommend this softwar
   - **You'll need to update the key, iv, and ip of your Yun in MainActivity.java**.
   - Connect your phone (or an emulator) to your PC and install the app.
 ### Overview
-This holds the code for the android app that communicates with the arduino. It
-  - Encrypts and sends lock/unlock commands to the arduino.
-  - Periodically updates the current door state by querying the arduino.
+This holds the code for the Android app that communicates with the Arduino. It
+  - Encrypts and sends lock/unlock commands to the Arduino.
+  - Periodically updates the current door state by querying the Arduino.
 
 The app was made using Android Studio and is fairly standard.
 
@@ -66,9 +66,9 @@ The app was made using Android Studio and is fairly standard.
   - **You'll need to update the key and iv in arduino.ino**.
   - Connect your Yun to your PC and upload the sketch.
 ### Overview
-This is the the code for the arduino which:
+This is the the code for the Arduino which:
   - Listens for lock/unlock commands and decrypts them
   - Moves the servo when valid commands are received
   - Hosts the current door state
 
-This was made using the [Arduino IDE](https://www.arduino.cc/en/Main/Software). 
+This was made using the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
