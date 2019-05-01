@@ -68,7 +68,12 @@ The app was made using Android Studio and is fairly standard.
   - **You'll need to update the key and iv in arduino.ino. See the TODOs.**
   - Connect your Yun to your PC and upload the sketch.
   - Wiring diagram:
-  [[wiring_diagram.png]]
+  ![wiring diagram](https://github.com/danvolchek/door-unlocker/blob/master/wiring_diagram.png)
+    - In the diagram:
+      - the servo ground should go to the ground of the Yun.
+      - the servo Vin should go to the 5v out of the Yun.
+      - the servo signal should go to digital pin 9 out of the Yun.
+      - the servo feedback should go to analog pin 0 out of the Yun.
 ### Overview
 This is the the code for the Arduino which:
   - Listens for lock/unlock commands and decrypts them
