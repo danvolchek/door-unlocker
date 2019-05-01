@@ -13,6 +13,7 @@
     + [Overview](#overview-2)
 
 This repo holds the hardware and software needed to create the door unlock/lock system that I've created. The main components are as follows. See below for a detailed description of each.
+
 | Component    | Files           |  Description                                    |
 |--------------|-----------------|-------------------------------------------------|
 | 3D Model     | `Door.fcstd`    | The 3d model needed to print the door assembly. |
